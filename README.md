@@ -8,9 +8,11 @@
 
 ## 演示
 
-<!-- 维护提示：换 GIF 时必须把下面地址里的 v= 递增。GitHub 的图片代理按完整 URL 做缓存键，
-     文件名和分支都不变的话，它会一直发旧图。 -->
-![选中术语就地解释，第二层带着父术语继续追问](https://github.com/KLAX54ix/dsh-explain-selection/blob/assets/demo.gif?raw=true&v=2)
+<!-- 维护提示：换 GIF 后必须把下面地址里的 v= 递增。
+     注意必须直接用 raw.githubusercontent.com 这个地址。写成 blob/<分支>/<文件>?raw=true 的话，
+     那一跳是 302 跳转，跳转目标会把查询串丢掉 —— 版本参数根本到不了真正被缓存的那个地址，
+     于是换了图也没用。 -->
+![选中术语就地解释，第二层带着父术语继续追问](https://raw.githubusercontent.com/KLAX54ix/dsh-explain-selection/assets/demo.gif?v=2)
 
 完整录制，**1 分 15 秒未剪辑**。值得留意的三处：
 
