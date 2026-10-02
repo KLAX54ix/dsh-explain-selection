@@ -18,7 +18,8 @@
 
 全程**对话里没有多出任何消息**：卡片不是消息，它只是浮在回答上方。
 
-> 上面是无声 GIF；**📥 [完整版录像（1 分 13 秒，含讲解音频）](https://github.com/KLAX54ix/dsh-explain-selection/releases/tag/v0.1.0)**
+> 上面是无声 GIF。**▶️ [完整版录像（1 分 13 秒，含讲解音频，5.6 MB）](https://github.com/KLAX54ix/dsh-explain-selection/blob/assets/demo-h264.mp4)**
+> —— H.264，浏览器直接播放，无需下载。
 
 ## 安装
 
