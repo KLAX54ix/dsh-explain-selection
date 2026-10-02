@@ -8,7 +8,9 @@
 
 ## 演示
 
-![选中术语就地解释，第二层带着父术语继续追问](https://github.com/KLAX54ix/dsh-explain-selection/blob/assets/demo.gif?raw=true)
+<!-- 维护提示：换 GIF 时必须把下面地址里的 v= 递增。GitHub 的图片代理按完整 URL 做缓存键，
+     文件名和分支都不变的话，它会一直发旧图。 -->
+![选中术语就地解释，第二层带着父术语继续追问](https://github.com/KLAX54ix/dsh-explain-selection/blob/assets/demo.gif?raw=true&v=2)
 
 完整录制，**1 分 15 秒未剪辑**。值得留意的三处：
 
