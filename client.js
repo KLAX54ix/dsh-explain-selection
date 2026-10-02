@@ -15,7 +15,7 @@
  * conversation is neither read nor written.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-explain-selection',
+  id: 'dsh-explain-selection',
   factory(require) {
     const React = require('react');
     const { useCallback, useEffect, useLayoutEffect, useRef, useState } = React;

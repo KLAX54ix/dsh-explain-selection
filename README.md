@@ -576,7 +576,7 @@ Cordis 加载器缓存着已求值的 ESM 模块，没有任何热路径能替�
 
 已装入当前 `desktop` profile（`application: applied`，`warnings: []`）：
 
-- `profiles/desktop/package.json` → `"@local/dsh-explain-selection": "link:D:/dsh-work/dsh-explain-plugin"`
+- `profiles/desktop/package.json` → `"dsh-explain-selection": "link:D:/dsh-work/dsh-explain-plugin"`
 - `dsh.profile.bundles` 已包含该包
 - 宿主行 `include:explain-selection` 已在运行中的树里
 - 客户端 `explain-selection` 已是 `shell.overlay` 的 **active** 占用者（order 40）

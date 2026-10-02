@@ -1,5 +1,5 @@
 {
-  "name": "@local/dsh-explain-selection",
+  "name": "dsh-explain-selection",
   "version": "0.1.0",
   "private": true,
   "type": "module",

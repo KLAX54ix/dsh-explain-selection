@@ -2,5 +2,5 @@
 # The Client half is discovered separately through package.json `dsh.client`.
 - insert:
     - id: explain-selection
-      name: '@local/dsh-explain-selection'
+      name: 'dsh-explain-selection'
       config: {}
