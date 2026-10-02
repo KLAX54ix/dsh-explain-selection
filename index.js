@@ -42,12 +42,23 @@ const MAX_PARENT_CHARS = 120;
  *   abstract: an earlier wording said "先说它是什么", which is a dictionary
  *   instruction, and it overrode the context rule.
  */
+/**
+ * The Host-side system prompt.
+ *
+ * Rule 4 was relaxed after observing that answers came back colloquial and
+ * term-free: the old wording ordered the model to *avoid* technical vocabulary
+ * ("只用日常汉语"), which also starved the nesting chain — `[[术语]]` markers are
+ * the only entry point for a follow-up card, so a term-free explanation leaves the
+ * next level with nothing to click. Rule 4 now asks for accuracy over plainness
+ * and requires the terms that do appear to be marked, while rules 1/2/3/5 stay
+ * exactly as they were so this change can be judged on its own.
+ */
 const SYSTEM_PROMPT = [
   '你在给中文读者做即时讲解。硬性要求：',
   '1. 先判断选中的文字是不是一个独立的中文词或术语。若它只是跨词边界的片段、代码标识符或不成词，直接说明它不是一个词，并指出它原本属于哪个词；严禁为它编造含义。',
   '2. 是词时，有【原文片段】就按它判断它在这里指什么，只讲这个意思，不要罗列别的含义。',
   '3. 两句话以内，最多 80 字，宁短勿长。',
-  '4. 只用日常汉语；必须用到新术语时写成 [[术语]]。',
+  '4. 该用领域术语就用，不要为了通俗而换成不准确的大白话；用到的术语都写成 [[术语]]，读者可以点它继续追问。',
   '5. 线索不足就直说，不要假装确定。',
 ].join('\n');
 
