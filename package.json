@@ -1,0 +1,39 @@
+{
+  "name": "@local/dsh-explain-selection",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Select any answer text to get a streaming explanation card; card text stays selectable for further explanation, and nothing enters the main conversation context.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KLAX54ix/dsh-explain-selection.git"
+  },
+  "homepage": "https://github.com/KLAX54ix/dsh-explain-selection#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "selection",
+    "explain"
+  ],
+  "meta": {
+    "title": "选中解释 / Explain Selection",
+    "description": "选中回答中的名词即可弹出讲解卡片，卡片内文本可继续选中追问，解释不写入主对话上下文。"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

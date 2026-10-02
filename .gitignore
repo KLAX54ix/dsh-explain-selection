@@ -1,0 +1,11 @@
+# Dependencies are never committed: this is a static, no-build bundle whose only
+# runtime dependency (the DSH packages) is supplied by the host process.
+node_modules/
+
+# Plugin-manager install logs
+*.log
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

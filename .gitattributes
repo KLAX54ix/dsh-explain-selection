@@ -1,0 +1,5 @@
+# Keep line endings LF in the repository and in the working tree. The plugin is a
+# plain JS bundle with no build step, so there is nothing that needs CRLF, and
+# forcing it here stops a .gitattributes-less checkout from rewriting every line
+# on the first commit from a Windows machine.
+* text=auto eol=lf

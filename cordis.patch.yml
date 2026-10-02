@@ -1,0 +1,6 @@
+# Loader patch for the explain-selection bundle: one Host row.
+# The Client half is discovered separately through package.json `dsh.client`.
+- insert:
+    - id: explain-selection
+      name: '@local/dsh-explain-selection'
+      config: {}
